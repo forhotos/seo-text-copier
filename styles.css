@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  outline: none;
+}
+
+#result{
+  border-radius: 8px;
+  border: 1px solid lightblue;
+  min-height: 400px;
+  padding: 1rem;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+input{
+  border-radius: 8px;
+  border: 1px solid lightblue;
+  padding: 1rem !important;
+}
+
+.count{
+  max-width: 100px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button{
+  border-radius: 8px !important;
+  padding: 1rem !important;
+}
