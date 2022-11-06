@@ -8,7 +8,6 @@ function copyWords(e){
 	e.preventDefault();
 	const formData = new FormData(e.target);
 	const data = Object.fromEntries(formData);
-	console.log(data);
 
 	const words = Object.keys(data).filter(item => item.includes('word'));
 	let result = '';
@@ -23,7 +22,6 @@ function copyWords(e){
 		result += '\n';
 	}
 
-	console.log(result);
 	resultInput.value = result;
 }
 
