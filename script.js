@@ -57,3 +57,10 @@ function clearAll(){
 	}
 	resultInput.value = '';
 }
+
+function copyResult(){
+	resultInput.select();
+	resultInput.setSelectionRange(0, 99999); // For mobile devices
+
+	navigator.clipboard.writeText(resultInput.value);
+}
