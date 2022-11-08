@@ -35,13 +35,16 @@
 				<div class="flex flex-col gap-4 flex-1">
 					<div class="flex justify-between items-end">
 						<label for="result">Результат:</label>
-						<button
-								class="hover:brightness-95 bg-sky-200"
-								type="button"
-								onclick="copyResult()"
-						>
-							Скопировать
-						</button>
+						<div class="flex gap-8">
+							<button class="hover:brightness-95 bg-slate-200" type="button" onclick="clearAll()">Очистить</button>
+							<button
+									class="hover:brightness-95 bg-sky-200"
+									type="button"
+									onclick="copyResult()"
+							>
+								Скопировать
+							</button>
+						</div>
 					</div>
 
 					<textarea id="result" disabled>
@@ -50,9 +53,8 @@
 				</div>
 
 			</div>
-			<div class="flex gap-4">
+			<div class="flex justify-center items-center">
 				<button class="hover:brightness-95 bg-sky-300" type="submit">Выполнить</button>
-				<button class="hover:brightness-95 bg-slate-200" type="button" onclick="clearAll()">Очистить</button>
 			</div>
 
 			<script src="https://cdn.tailwindcss.com"></script>
